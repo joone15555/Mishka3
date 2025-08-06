@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Verti by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload homepage">
+		<!-- Intro Screen -->
+<div id="intro-screen" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #ffffff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  z-index: 9999;
+">
+  <img src="loading-image.png" alt="تحميل" style="margin-bottom: 20px; max-width: 200px;">
+  <p style="font-size: 18px;">جاري التحميل...</p>
+</div>
+<div id="page-wrapper">
+<!-- Header -->
+<div id="header-wrapper">
+  <header id="header" class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; direction: rtl;">
+
+    <!-- Logo Left -->
+    <div id="logo" style="order: 1;">
+      <a href="index.html">
+        <img src="loading-image.png" alt="شعار الموقع" style="max-width: 150px; height: auto;">
+      </a>
+    </div>
+
+    <!-- Nav Right (روابط بالعربي + قائمة اللغة) -->
+    <nav style="order: 2; display: flex; align-items: center;">
+      <ul style="
+        display: flex; 
+        gap: 20px; 
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+        align-items: center;
+        position: relative;
+      ">
+        <!-- الروابط -->
+        <li style="display: flex; align-items: center;">
+          <a href="index.html" style="
+            font-weight: bold;
+            text-decoration: none;
+            color: #444;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+          " 
+          onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+          >الرئيسية</a>
+        </li>
+        <li style="display: flex; align-items: center;">
+          <a href="futcher work.html" style="
+            font-weight: bold;
+            text-decoration: none;
+            color: #444;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+          " 
+          onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+          >الاعمال المستقبلية</a>
+        </li>
+        <li style="display: flex; align-items: center;">
+          <a href="card.html" style="
+            font-weight: bold;
+            text-decoration: none;
+            color: #444;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+          " 
+          onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+          >بطاقة مشكاة</a>
+        </li>
+
+       
+            <!-- Language Dropdown -->
+            <li style="position: relative;">
+              <button onclick="toggleLanguageMenu()" style="
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                padding: 8px;
+              " title="Change Language">🌐</button>
+              <ul id="language-menu" style="
+                display: none;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                min-width: 160px;
+                z-index: 1000;
+              ">
+                <li>
+                  <a href="index.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇸🇦 &nbsp; Arabic
+                  </a>
+                </li>
+                <li>
+                  <a href="index_en.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇺🇸 &nbsp; English
+                  </a>
+                </li>
+                <li>
+                  <a href="index_es 2.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇪🇸 &nbsp; Español
+                  </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+</div>
+
+<!-- سكريبت فتح/إغلاق القائمة -->
+<script>
+  function toggleLanguageMenu() {
+    const menu = document.getElementById('language-menu');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  }
+
+  // إغلاق القائمة إذا ضغط المستخدم خارجها
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('language-menu');
+    const button = e.target.closest('button');
+    if (!e.target.closest('#language-menu') && (!button || button.innerText !== '🌐')) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+			<!-- Banner -->
+<!-- Banner -->
+<div id="banner-wrapper" style="background-color: #f8f9fa; padding: 40px 0;">
+  <div id="banner" class="box container" style="
+    background-color: #a7957c; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    padding: 30px;
+  ">
+    <div class="row">
+      <div class="col-7 col-12-medium" style="text-align: center;">
+        <h2 id="changing-text" style="color: white;">مرحباً بك في موقعنا</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const phrases = [
+    "مرحباً بك في موقعنا",
+    "نحن هنا لخدمتك",
+    "استمتع بتصفح المحتوى",
+  ];
+
+  let index = 0;
+  const textElement = document.getElementById("changing-text");
+
+  setInterval(() => {
+    index = (index + 1) % phrases.length;
+    textElement.textContent = phrases[index];
+  }, 4000); // يتغير كل 3 ثواني
+</script>
+<div id="features-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-12-medium">
+        <section class="box feature" style="
+          background-color: #a7957c;
+          border-radius: 12px;
+          padding: 30px;
+          color: white;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          min-height: 250px;
+        ">
+          <div class="inner">
+            <header>
+              <h2 style="font-size: 50px; margin: 0;">مــن نــحــن</h2>
+            </header>
+            <p style="font-size: 24px; margin-top: 10px;">
+              صُـممت مشكاة لتكون خارطتك البسطية في مكة لتستمتع في مكة بتجربة سريعة و واضحة
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+			<!-- Features -->
+			 <br><br>
+<h1 style="
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-top: 50px;
+">
+  الممـيزات
+</h1>
+				<div id="features-wrapper">
+  <div class="container">
+    <div class="row">
+      
+      <!-- المربع الأول -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="background-color: #a7957c; border-radius: 12px; padding: 20px; color: white; height: 100%;">
+          <img src="map.png" alt="" class="image featured" />
+          <div class="inner">
+            <header>
+              <h2>خرائط تفاعلية</h2>
+            </header>
+            <p>يقدم خدمة خرائط تفاعلية يتفاعل معها الزائر لبيت الله الحرام، هذه الخرائط تبين له التالي: دورات المياه، مطعم، مستشفى، صيدلية، صراف آلي، أماكن صرف وتحويل العملات، حلاق، سوبر ماركت، مركز تسوق... إلخ.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- المربع الثاني -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="background-color: #a7957c; border-radius: 12px; padding: 20px; color: white; height: 100%;">
+          <img src="Translate .jpg" alt="" class="image featured" />
+          <div class="inner">
+            <header>
+              <h2>يدعم عدة لغات وذوي الاحتياجات الخاصة</h2>
+            </header>
+            <p>يقدم خدمة لغير مستخدمي اللغة العربية حول العالم لتسهيل استخدام البرنامج، وأيضاً لتسهيل عملية الاستخدام لذوي الاحتياجات الخاصة.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- المربع الثالث -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="background-color: #a7957c; border-radius: 12px; padding: 20px; color: white; height: 100%;">
+          <img src="wi-fi.jpg" alt="" class="image featured" />
+          <div class="inner">
+            <header>
+              <h2>لا يحتاج لإنترنت</h2>
+            </header>
+            <p>نقدم خدمة العمل على البرنامج بدون إنترنت، في حال عدم توفر الإنترنت للزائر.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<h1 style="
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-top: 50px;
+">
+  الـخـدمـات
+</h1>
+<div id="features-wrapper">
+  <div class="container">
+    <div class="row">
+      
+      <!-- المربع الأول -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="
+          background-color: #a7957c;
+          border-radius: 12px;
+          padding: 30px;
+          color: white;
+          height: 100%;
+        ">
+          <div class="inner">
+            <header>
+              <h2>حدد اقرب الخدمات اليك</h2>
+            </header>
+          </div>
+        </section>
+      </div>
+
+      <!-- المربع الثاني -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="
+          background-color: #a7957c;
+          border-radius: 12px;
+          padding: 30px;
+          color: white;
+          height: 100%;
+        ">
+          <div class="inner">
+            <header>
+              <h2>مواعيد الباصات</h2>
+            </header>
+          </div>
+        </section>
+      </div>
+      
+      <!-- المربع الثالث -->
+      <div class="col-4 col-12-medium">
+        <section class="box feature" style="
+          background-color: #a7957c;
+          border-radius: 12px;
+          padding: 30px;
+          color: white;
+          height: 100%;
+        ">
+          <div class="inner">
+            <header>
+              <h2>مــواقيت الصلاة</h2>
+            </header>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>لـتـواصل</h3>
+										<ul>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+										</ul>
+										<p>1234 Fictional Road<br />
+										Nashville, TN 00000<br />
+										(800) 555-0000</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- Hide intro screen after 3 seconds -->
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const intro = document.getElementById("intro-screen");
+      if (intro) intro.style.display = "none";
+    }, 1500);
+  });
+</script>
+
+
+	</body>
+</html>

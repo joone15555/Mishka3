@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Verti by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload homepage">
+  <!-- Intro Screen -->
+  <div id="intro-screen" style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    z-index: 9999;
+  ">
+    <img src="loading-image.png" alt="تحميل" style="margin-bottom: 20px; max-width: 200px;">
+    <p style="font-size: 18px;">Cargando...</p>
+  </div>
+
+  <div id="page-wrapper">
+    <!-- Header -->
+    <div id="header-wrapper">
+      <header id="header" class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; direction: rtl;">
+        <!-- Logo Left -->
+        <div id="logo" style="order: 1;">
+          <a href="index_es 2.html">
+            <img src="loading-image.png" alt="شعار الموقع" style="max-width: 150px; height: auto;">
+          </a>
+        </div>
+
+        <!-- Nav Right -->
+        <nav style="order: 2; display: flex; align-items: center;">
+          <ul style="
+            display: flex; 
+            gap: 20px; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            align-items: center;
+            position: relative;
+          ">
+            <li style="display: flex; align-items: center;">
+              <a href="index_es 2.html" style="
+                font-weight: bold;
+                text-decoration: none;
+                color: #444;
+                padding: 8px 16px;
+                border-radius: 8px;
+                transition: background-color 0.3s, color 0.3s;
+              " 
+              onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+              onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+              >Hogar</a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="futcher work_es 2.html" style="
+                font-weight: bold;
+                text-decoration: none;
+                color: #444;
+                padding: 8px 16px;
+                border-radius: 8px;
+                transition: background-color 0.3s, color 0.3s;
+              " 
+              onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+              onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+              >Trabajo futuro</a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="card_es 2.html" style="
+                font-weight: bold;
+                text-decoration: none;
+                color: #444;
+                padding: 8px 16px;
+                border-radius: 8px;
+                transition: background-color 0.3s, color 0.3s;
+              " 
+              onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='#000';"
+              onmouseout="this.style.backgroundColor='transparent'; this.style.color='#444';"
+              >Tarjeta de Mishkat</a>
+            </li>
+<!-- Language Dropdown -->
+            <li style="position: relative;">
+              <button onclick="toggleLanguageMenu()" style="
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                padding: 8px;
+              " title="Change Language">🌐</button>
+              <ul id="language-menu" style="
+                display: none;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                min-width: 160px;
+                z-index: 1000;
+              ">
+                <li>
+                  <a href="index.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇸🇦 &nbsp; Arabic
+                  </a>
+                </li>
+                <li>
+                  <a href="index_en.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇺🇸 &nbsp; English
+                  </a>
+                </li>
+                <li>
+                  <a href="index_es 2.html" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    transition: background 0.3s;
+                  " onmouseover="this.style.backgroundColor='#f0f0f0';"
+                    onmouseout="this.style.backgroundColor='transparent';">
+                    🇪🇸 &nbsp; Español
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <!-- لغة التبديل -->
+  <script>
+    function toggleLanguageMenu() {
+      const menu = document.getElementById('language-menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+
+    // إغلاق القائمة إذا ضغط المستخدم خارجها
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('language-menu');
+      const button = e.target.closest('button');
+      if (!e.target.closest('#language-menu') && (!button || button.innerText !== '🌐')) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+<style>
+  .center-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    background-color: #a7957c;
+    text-align: center;
+  }
+
+  .flip-card-front img {
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .flip-card-front h2,
+  .flip-card-back h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back a {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: white;
+    color: #a7957c;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+  }
+</style>
+
+<div class="center-card-wrapper">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <!-- الوجه الأمامي -->
+      <div class="flip-card-front">
+        <img src="ph1.png" alt="بطاقة مشكاة">
+        <h2>Tarjeta de Mishkat</h2>
+      </div>
+
+      <!-- الوجه الخلفي -->
+      <div class="flip-card-back">
+        <h2>Más</h2>
+        <a href="map1_es 2.html">haga clic aquí</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>comunicación</h3>
+										<ul>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+										</ul>
+										<p>1234 Fictional Road<br />
+										Nashville, TN 00000<br />
+										(800) 555-0000</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- Hide intro screen after 3 seconds -->
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const intro = document.getElementById("intro-screen");
+      if (intro) intro.style.display = "none";
+    }, 1500);
+  });
+</script>
+
+
+	</body>
+</html>
